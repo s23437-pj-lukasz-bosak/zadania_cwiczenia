@@ -1,6 +1,6 @@
 package pjwstk;
 
-public class Cylinder {
+public class Cylinder extends Circle{
 
     private double height = 4.0;
 
@@ -9,7 +9,15 @@ public class Cylinder {
     }
 
     Cylinder(double radius){
-        radius = super.radius;
+        super.radius = radius;
     }
 
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getVolume(){
+        return super.getArea()* getHeight() + super.radius;
+    }
 }

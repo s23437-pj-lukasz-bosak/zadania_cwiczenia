@@ -2,15 +2,15 @@ package pjwstk;
 
 public class Circle {
 
-   private double radius = 0.1;
-   private String colour = "blue";
-
+  public double radius = 0.1;
+  public String colour = "blue";
+    java.text.DecimalFormat df=new java.text.DecimalFormat("0.000");
     Circle(){
 
     }
 
     Circle(double radius){
-       radius = this.radius;
+       this.radius = radius;
 
     }
 
@@ -19,8 +19,10 @@ public class Circle {
     }
 
     public double getArea(){
-        return getRadius()*getRadius()*3.14;
+        return getRadius() * getRadius() * 3.14;
     }
 
-
+    public String toString(){
+        return "radius = " + getRadius() + " Area = " + df.format(getArea()) + " colour = " + colour;
+    }
 }
