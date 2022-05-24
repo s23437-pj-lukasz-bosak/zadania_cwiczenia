@@ -1,4 +1,4 @@
-package pjwstk;
+package cars;
 
 public class Car {
     // nadrzedna klasa car. podpunkt A

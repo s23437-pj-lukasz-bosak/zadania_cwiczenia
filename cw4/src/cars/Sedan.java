@@ -1,4 +1,4 @@
-package pjwstk;
+package cars;
 // podrzedna klasa sedan podpunkt B
 
 public class Sedan extends Car {
