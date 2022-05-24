@@ -3,7 +3,7 @@ package cars;
 public class Truck extends Car{
 
     int weight;
-    int testtest;
+
     Truck(int speed , double regularPrice, String colour , int weight ) {
         speed = super.speed;
         regularPrice = super.regularPrice;
