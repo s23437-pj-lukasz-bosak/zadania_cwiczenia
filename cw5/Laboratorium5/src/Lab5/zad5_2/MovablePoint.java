@@ -1,6 +1,7 @@
 package Lab5.zad5_2;
 
-public class MovablePoint {
+
+public class MovablePoint implements Movable {
 
     private int x;
     private int y;
@@ -14,20 +15,20 @@ public class MovablePoint {
         return "x = " + x + " y = " + y;
     }
 
-    public void moveUp(int distance){
-        this.y += distance;
+    public void moveUp(){
+        this.y ++;
     }
 
-    public void moveDown(int distance){
-        this.y -= distance;
+    public void moveDown(){
+        this.y --;
     }
 
-    public void moveLeft( int distance){
-        this.x -= distance;
+    public void moveLeft(){
+        this.x --;
     }
 
-    public void moveRight(int distance){
-        this.x += distance;
+    public void moveRight(){
+        this.x ++;
     }
 
 
