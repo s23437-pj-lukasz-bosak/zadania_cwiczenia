@@ -16,6 +16,7 @@ public class AutoShop {
         Truck truck1 = new Truck(200, 500000, "gold" , 5000);
         System.out.println(truck1.getPurchaseInfo() + ": " + truck1.getSalePrice() );
 
+
     }
 
 

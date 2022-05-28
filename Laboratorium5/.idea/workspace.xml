@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aac32d8-f8ee-48ad-8278-dcbfb061ddf0" name="Changes" comment="added zad511 , 512" />
+    <list default="true" id="7aac32d8-f8ee-48ad-8278-dcbfb061ddf0" name="Changes" comment="added zad511 , 512">
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/Laboratorium5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/src/Lab5/zad5_1/Zad5_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cw5/Laboratorium5/src/Lab5/zad5_2/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cw4/src/cars/AutoShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cw4/src/cars/AutoShop.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +96,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cw4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cw3" />
   </component>
   <component name="RunManager" selected="Application.Zad51">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
