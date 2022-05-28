@@ -23,6 +23,7 @@ public class Circle {
     }
 
     public String toString(){
-        return "radius = " + getRadius() + " Area = " + df.format(getArea()) + " colour = " + colour;
+        return "radius = " + getRadius() + " Area = "
+                + df.format(getArea()) + " colour = " + colour;
     }
 }

@@ -24,7 +24,12 @@ public class TestCircleAndCylinder {
                 + " wysokosc = " + cy2.getHeight()
                 + " promien = " + cy2.getRadius() + " kolor : " + cy2.colour );
 
+        // konstruktor z 2 argumentami
 
+        Cylinder cy3 = new Cylinder(10, 23);
+        System.out.println("cylinder: volume = " + df.format(cy2.getVolume())
+                + " wysokosc = " + cy3.getHeight()
+                + " promien = " + cy3.getRadius() + " kolor : " + cy3.colour );
 
 
     }
