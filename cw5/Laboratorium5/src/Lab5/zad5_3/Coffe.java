@@ -14,6 +14,11 @@ public class Coffe {
         coffes.add("macchiato");
 
         System.out.println(coffes);
+        // tu koniec bez update na git
+        coffes.iterator();
+        for(int i = 0 ; i < coffes.size() ; i++){
+            hasNext()
+        }
 
 
 

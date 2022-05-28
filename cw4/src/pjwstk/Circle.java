@@ -22,6 +22,7 @@ public class Circle {
         return getRadius() * getRadius() * 3.14;
     }
 
+    @Override
     public String toString(){
         return "radius = " + getRadius() + " Area = "
                 + df.format(getArea()) + " colour = " + colour;
