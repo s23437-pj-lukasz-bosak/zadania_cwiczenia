@@ -1,15 +1,15 @@
 package cars;
 // podrzedna klasa sedan podpunkt B
 
-public class Sedan extends Car {
+public class Sedan extends Car implements Purchase {
 
     int lenght;
 
     Sedan(int speed , double regularPrice, String colour , int lenght ){
-        speed = super.speed;
-        regularPrice = super.regularPrice;
-        colour = super.colour;
-        lenght = this.lenght;
+        super.speed = speed;
+        super.regularPrice = regularPrice;
+        super.colour = colour;
+        this.lenght = lenght;
     }
 
 
@@ -19,5 +19,8 @@ public class Sedan extends Car {
         }else{
             return super.getSalePrice() - (0.1 * super.getSalePrice());
         }
+    }
+    public String getPurchaseInfo(){
+        return "SEDAN";
     }
 }

@@ -1,14 +1,14 @@
 package cars;
 
-public class Truck extends Car{
+public class Truck extends Car implements Purchase{
 
     int weight;
 
     Truck(int speed , double regularPrice, String colour , int weight ) {
-        speed = super.speed;
-        regularPrice = super.regularPrice;
-        colour = super.colour;
-        weight = this.weight;
+       super.speed = speed;
+       super.regularPrice = regularPrice;
+       super.colour = colour;
+       this.weight = weight;
     }
 
     public double getSalePrice(){
@@ -17,6 +17,9 @@ public class Truck extends Car{
         }else{
             return super.getSalePrice();
         }
+    }
+    public String getPurchaseInfo(){
+        return "TRUCK";
     }
 
 }
