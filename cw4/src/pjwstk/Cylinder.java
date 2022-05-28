@@ -9,12 +9,13 @@ public class Cylinder extends Circle{
     }
 
     Cylinder(double radius){
-        super.radius = radius;
+        super(radius);
     }
 
     Cylinder(double radius, double height){
+        super(radius);
         this.height = height;
-        super.radius = radius;
+
     }
 
 
@@ -23,6 +24,6 @@ public class Cylinder extends Circle{
     }
 
     public double getVolume(){
-        return super.getArea()* getHeight() + super.radius;
+        return super.getArea()* getHeight() * getRadius();
     }
 }
