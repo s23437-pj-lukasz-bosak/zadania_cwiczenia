@@ -9,7 +9,7 @@ public class Zad5_1 {
 // pomiar czasu start
         long time1 = System.currentTimeMillis() , time2;
 // ta pętla tworzy liste i wprowadza do niej liczby pierwsze.
-        for(int i = 0; i < 100 ; i++){
+        for(int i = 0; i <= 100 ; i++){
             if(i%2 == 0 ){
                 evenList.add(i);
             }

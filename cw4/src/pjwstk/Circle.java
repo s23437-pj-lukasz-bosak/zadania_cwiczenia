@@ -2,8 +2,8 @@ package pjwstk;
 
 public class Circle {
 
-  public double radius = 0.1;
-  public String colour = "blue";
+  private double radius = 0.1;
+  private String colour = "blue";
     java.text.DecimalFormat df=new java.text.DecimalFormat("0.000");
     Circle(){
 

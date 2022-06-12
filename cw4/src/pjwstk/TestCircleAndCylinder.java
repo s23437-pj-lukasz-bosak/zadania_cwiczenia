@@ -18,18 +18,18 @@ public class TestCircleAndCylinder {
 
         System.out.println("cylinder: volume = " + df.format(cy1.getVolume())
                 + " wysokosc = " + cy1.getHeight()
-                + " promien = " + cy1.getRadius() + " kolor : " + cy1.colour);
+                + " promien = " + cy1.getRadius() + " kolor : " );
 
         System.out.println("cylinder: volume = " + df.format(cy2.getVolume())
                 + " wysokosc = " + cy2.getHeight()
-                + " promien = " + cy2.getRadius() + " kolor : " + cy2.colour );
+                + " promien = " + cy2.getRadius() + " kolor : "  );
 
         // konstruktor z 2 argumentami
 
         Cylinder cy3 = new Cylinder(10, 23);
         System.out.println("cylinder: volume = " + df.format(cy2.getVolume())
                 + " wysokosc = " + cy3.getHeight()
-                + " promien = " + cy3.getRadius() + " kolor : " + cy3.colour );
+                + " promien = " + cy3.getRadius() + " kolor : "  );
 
 
     }

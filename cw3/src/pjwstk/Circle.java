@@ -36,9 +36,6 @@ public class Circle {
         return this.colour;
     }
 
-
-
-
     public void setRadius(double radius) {
         this.radius = radius;
     }
@@ -47,6 +44,7 @@ public class Circle {
         this.colour = colour;
     }
 
+    @Override
     public String toString(){
         return this.radius + " " + this.colour;
     }

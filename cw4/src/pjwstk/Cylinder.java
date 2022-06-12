@@ -2,10 +2,11 @@ package pjwstk;
 
 public class Cylinder extends Circle{
 
-    private double height = 4.0;
+    private double height;
 
     Cylinder(){
-
+        super();
+        height = 4.0;
     }
 
     Cylinder(double radius){

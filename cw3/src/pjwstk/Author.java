@@ -28,8 +28,10 @@ public class Author {
         this.surname = surname;
     }
 
+    @Override
     public String toString(){
-        return "met toString: Author name = " + getName() + " nazwisko = " + getSurname() + " wiek = " + getAge();
+        return "met toString: Author name = " + getName()
+                + " nazwisko = " + getSurname() + " wiek = " + getAge();
     }
 
 }
