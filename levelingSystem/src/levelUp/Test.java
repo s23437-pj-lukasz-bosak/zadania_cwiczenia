@@ -1,6 +1,7 @@
 package levelUp;
 
-public class Hero {
+public class Test {
+
 
 
 }
