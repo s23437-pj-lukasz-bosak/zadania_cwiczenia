@@ -9,7 +9,7 @@ public class Mage extends NewHero{
     private int dexterity;
     private int agility;
     private int speed;
-
+cv
 
     public int getStrenght() {
         return strenght;
