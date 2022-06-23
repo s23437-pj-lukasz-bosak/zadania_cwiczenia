@@ -73,7 +73,7 @@ public class Tree {
 
         System.out.println("Porównywanie el. przechowywanych w dwoch drzewach binarnych");
 
-        System.out.println(tree1.containsAll(tree2));
+        // System.out.println(tree1.containsAll(tree2));
 
         System.out.println("CZy element << Black >> w tree 1 jest taki sam jak w tree2 ?");
         if((tree1.contains("Black") == true) && (tree2.contains("Black") == true)){
