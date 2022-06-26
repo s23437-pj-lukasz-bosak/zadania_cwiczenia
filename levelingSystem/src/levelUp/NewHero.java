@@ -5,66 +5,67 @@ import java.util.Scanner;
 public class NewHero {
     Scanner skaner = new Scanner(System.in);
 
-    private int strenght;
-    private int defence;
-    private int intelligence;
-    private int dexterity;
-    private int agility;
-    private int speed;
+    private double strenght;
+    private double defence;
+    private double intelligence;
+    private double dexterity;
+    private double agility;
+    private double speed;
 
 
-    public int getStrenght() {
+
+    private double baseStrenght;
+    private double baseDefence;
+    private double baseIntelligence;
+    private double baseDexterity;
+    private double baseAgility;
+    private double baseSpeed;
+
+    private String className;
+    //private int promotion = 1;
+    private int level = 1;
+    private int points;
+    private int choose;
+    public int getPoints() {
+        return points;
+    }
+
+    public double getStrenght() {
         return strenght;
     }
 
-    public void setStrenght(int strenght) {
-        this.strenght = strenght;
-    }
-
-    public int getDefence() {
+    public double getDefence() {
         return defence;
     }
 
-    public void setDefence(int defence) {
-        this.defence = defence;
-    }
-
-    public int getIntelligence() {
+    public double getIntelligence() {
         return intelligence;
     }
 
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
-    }
-
-    public int getDexterity() {
+    public double getDexterity() {
         return dexterity;
     }
 
-    public void setDexterity(int dexterity) {
-        this.dexterity = dexterity;
-    }
-
-    public int getAgility() {
+    public double getAgility() {
         return agility;
     }
 
-    public void setAgility(int agility) {
-        this.agility = agility;
-    }
-
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public String getClassName() {
+        return className;
+    }
+
+    public int getLevel() {
+        return level;
     }
 
 
     public int heroClassChoose() {
 
-        int choose;
+
 
         System.out.println("Witamy w kreatorze postaci");
         System.out.println(" do wyboru masz 3 klasy");
@@ -82,30 +83,57 @@ public class NewHero {
                 switch (choose) {
                     case 1:
                         System.out.println("wybrałes Mage");
-                        setDefence(10);
-                        setDexterity(10);
-                        setSpeed(5);
-                        setIntelligence(20);
-                        setStrenght(5);
-                        setAgility(10);
+                        defence = 10;
+                        dexterity = 10;
+                        speed = 5;
+                        intelligence = 0;
+                        strenght = 5;
+                        agility = 10;
+
+                        baseDefence = 10;
+                        baseDexterity = 10;
+                        baseSpeed = 5;
+                        baseIntelligence = 100;
+                        baseStrenght = 5;
+                        baseAgility = 10;
+
+                        className = "Mage";
                         break;
                     case 2:
                         System.out.println("wybrałes Knight");
-                        setDefence(10);
-                        setDexterity(5);
-                        setSpeed(10);
-                        setIntelligence(5);
-                        setStrenght(20);
-                        setAgility(10);
+                        defence = 10;
+                        dexterity = 5;
+                        speed = 10;
+                        intelligence = 5;
+                        strenght = 20;
+                        agility = 10;
+
+                        baseDefence = 10;
+                        baseDexterity = 5;
+                        baseSpeed = 10;
+                        baseIntelligence = 5;
+                        baseStrenght = 20;
+                        baseAgility = 10;
+
+                        className = "Knight";
                         break;
                     case 3:
                         System.out.println("wybrałes Archer");
-                        setDefence(5);
-                        setDexterity(20);
-                        setSpeed(10);
-                        setIntelligence(10);
-                        setStrenght(5);
-                        setAgility(10);
+                        defence = 5;
+                        dexterity = 20;
+                        speed = 10;
+                        intelligence = 10;
+                        strenght = 5;
+                        agility = 10;
+
+                        baseDefence = 5;
+                        baseDexterity = 20;
+                        baseSpeed = 10;
+                        baseIntelligence = 10;
+                        baseStrenght = 5;
+                        baseAgility = 10;
+
+                        className = "Archer";
                         break;
 
                 }
@@ -116,5 +144,142 @@ public class NewHero {
 
 
     }
-}
 
+    public void levelUp(){
+
+
+        System.out.println("awansujesz na wyższy poziom!");
+            level ++;
+            points += 10;
+    }
+
+    public double increeseInteligence(){
+        switch (choose){
+            case 1 :
+                intelligence +=  (1.2 * baseIntelligence);
+                points --;
+
+                break;
+            case 2,3 :
+                intelligence += baseIntelligence;
+                points --;
+
+                break;
+
+        }
+        return intelligence;
+    }
+
+    public double increeseStrenght(){
+        switch(choose){
+            case 1:
+                strenght += baseStrenght;
+                points --;
+                break;
+            case 2:
+                strenght = strenght + (baseStrenght * 1.2);
+                points --;
+                break;
+            case 3:
+                strenght = strenght + (baseStrenght * 1.05);
+                points --;
+                break;
+        }
+        return strenght;
+    }
+
+    public double increeseDefence(){
+        switch(choose){
+            case 1 :
+                defence += baseDefence;
+                points --;
+                break;
+            case 2:
+                defence = defence + (baseDefence * 1.1);
+                points --;
+                break;
+            case 3:
+                defence = defence + (baseDefence * 1.05);
+                points --;
+                break;
+        }
+
+        return defence;
+    }
+
+    public double increeseAgility(){
+        switch (choose){
+            case 1 ,2 :
+                agility = agility + (1.02 * baseAgility);
+                points --;
+                break;
+            case 3 :
+                agility = agility + (1.1 * baseAgility );
+                points --;
+                break;
+        }
+        return agility;
+    }
+
+    public double increeseSpeed(){
+        switch ( choose){
+            case 1:
+                speed += baseSpeed;
+                points --;
+                break;
+            case 2:
+                speed = speed + (1.2 * baseSpeed);
+                points --;
+                break;
+        }
+        return speed;
+    }
+
+    public double increeseDexterity(){
+        switch (choose){
+            case 1 , 2:
+                dexterity = dexterity + (1.05 * baseDexterity);
+                points --;
+                break;
+            case 3:
+                dexterity = dexterity + (1.2 * baseDexterity);
+                points --;
+                break;
+        }
+        return dexterity;
+    }
+
+
+    // lewelowanie chyba wyrzucic do maina albo zrobic osobna klase z levelowaniem ..
+//    public void levelUp() {
+//        level++;
+//
+//        System.out.println("Pozsotało: " + levelPoints + " punktów do rozdania.");
+//        System.out.println("Wybierz którą statystykę ulepszyc: ");
+//        System.out.println("1 - defence , 2 - dexterity , 3 speed , \n 4 - intelligence , 5 strenght , 6 - agility.");
+//        int choose2 = skaner.nextInt();
+//        switch (choose2) {
+//            case 1:
+//                defence = 10;
+//                break;
+//            case 2:
+//                dexterity = 10;
+//                break;
+//            case 3:
+//                speed = 5;
+//                break;
+//            case 4:
+//                intelligence = 20;
+//                break;
+//            case 5:
+//                strenght = 5;
+//                break;
+//            case 6:
+//                agility = 10;
+//                break;
+//        }
+//
+//
+//    }
+
+}
